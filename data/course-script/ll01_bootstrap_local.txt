@@ -1,0 +1,28 @@
+# Fork the repository and clone it locally.
+
+git clone https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers.git nihonjindes-japanese-for-italian-speakers
+cd nihonjindes-japanese-for-italian-speakers
+
+# Modify README.md
+
+git status
+git add .
+git commit -m "update README.md"
+git push
+
+---
+
+git lfs install
+git lfs pull
+
+cp apps/web/.env.example apps/web/.env
+
+# change url in apps/web/.env
+
+cp config/vars.env.example config/vars.env
+
+# change path in config/vars.env
+
+npm install
+
+---
