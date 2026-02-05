@@ -3,6 +3,8 @@ A Japanese-learning tool designed for Italian speakers. It's a work in progress,
 
 This course is based on my personal learning journey. I share and update it as I go along, in case it is useful to other students.
 
-I am the author of all the images.
+I am the author of all the images in the Japanese course.
+
+You can try it out on [nihonjindes.net](https://www.nihonjindes.net/)
 
 
