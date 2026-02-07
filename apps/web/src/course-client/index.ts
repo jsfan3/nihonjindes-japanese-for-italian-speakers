@@ -3,6 +3,11 @@ import parseMarkdown from '../utils/parseMarkdown';
 import { baseURL } from './../../config/gists.json';
 import { PUBLIC_GITHUB_PAT } from '$env/static/public';
 
+const courseDataModules = import.meta.glob('../courses/*/courseData.json');
+const challengeModules = import.meta.glob('../courses/*/challenges/*.json');
+const introductionModules = import.meta.glob('../courses/*/introduction/*');
+
+
 export type SkillDataType = {
 	id: string;
 	practiceHref: string;
@@ -110,7 +115,13 @@ export const get_course = async ({
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
-	const rawCourseData = await import(/* @vite-ignore */ `../courses/${courseName}/courseData.json`); // eslint-disable-line @typescript-eslint/no-var-requires
+	const key = `../courses/${courseName}/courseData.json`;
+    const loader = courseDataModules[key];
+    if (!loader) throw new Error(`Missing courseData.json for course "${courseName}"`);
+
+    const mod: any = await loader();
+    const rawCourseData = mod.default ?? mod;
+
 	return formatCourseData(rawCourseData, { courseName });
 };
 
@@ -155,10 +166,12 @@ export const get_skill_data = async ({
 		});
 	}
 
-	// eslint-disable-next-line @typescript-eslint/no-var-requires
-	const skillData = await import(
-		/* @vite-ignore */ `../courses/${courseName}/challenges/${skillName}.json`
-	);
+	const key = `../courses/${courseName}/challenges/${skillName}.json`;
+    const loader = challengeModules[key];
+    if (!loader) throw new Error(`Missing challenge "${skillName}" for course "${courseName}"`);
+
+    const mod: any = await loader();
+    const skillData = mod.default ?? mod;
 
 	return await formatSkilldata(skillData, { courseName, skillName, gistId });
 };
@@ -197,16 +210,23 @@ export const get_skill_introduction = async ({
 					});
 				}
 
-				const { markdown } = await import(
-					/* @vite-ignore */ `../courses/${courseName}/introduction/${skill.introduction}`
-				);
+				const key = `../courses/${courseName}/introduction/${skill.introduction}`;
+				const loader = introductionModules[key];
+				if (!loader) throw new Error(`Missing introduction "${skill.introduction}" for course "${courseName}"`);
+
+				const introMod: any = await loader();
+				const markdown =
+					introMod?.markdown ??
+					introMod?.default?.markdown ??
+					introMod?.default ??
+					introMod;
 
 				return formatSkillIntroduction(skill, {
 					skillName,
 					courseName,
 					markdown
 				});
-			}
+}
 		}
 	}
 

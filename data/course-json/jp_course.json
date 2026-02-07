@@ -2,7 +2,7 @@
   "course": {
     "repository": "https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers",
     "slug": "japanese-from-italian",
-    "title": "Nihonjindes: Japanese for Italian speakers",
+    "title": "Nihonjindes: Japanese course for Italian speakers",
     "description": "Course generated from JSON; edit this file to add categories/lessons/items.",
     "language": {
       "name": "Japanese",
@@ -54,7 +54,8 @@
               "it": "Questo è un libro",
               "image": "data/course-img/transparent.png"
             }
-          ]
+          ],
+          "notes": ""
         },
         {
           "slug": "drinks-1",
@@ -80,7 +81,8 @@
               "it": "È acqua",
               "image": "data/course-img/transparent.png"
             }
-          ]
+          ],
+          "notes": ""
         }
       ]
     },
@@ -107,7 +109,8 @@
               "it": "grazie (cortese)",
               "image": "data/course-img/transparent.png"
             }
-          ]
+          ],
+          "notes": ""
         },
         {
           "slug": "people-1",
@@ -133,9 +136,11 @@
               "it": "C'è anche un cane",
               "image": "data/course-img/transparent.png"
             }
-          ]
+          ],
+          "notes": ""
         }
       ]
     }
-  ]
+  ],
+  "title": ""
 }

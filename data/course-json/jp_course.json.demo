@@ -1,0 +1,141 @@
+{
+  "course": {
+    "repository": "https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers",
+    "slug": "japanese-from-italian",
+    "title": "Nihonjindes: Japanese for Italian speakers",
+    "description": "Course generated from JSON; edit this file to add categories/lessons/items.",
+    "language": {
+      "name": "Japanese",
+      "bcp47": "ja"
+    },
+    "from": {
+      "name": "Italian",
+      "bcp47": "it"
+    },
+    "license": {
+      "name": "CC BY-SA 4.0 International",
+      "short": "CC BY-SA 4.0",
+      "link": "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+    },
+    "special_characters": [
+      "ー",
+      "。",
+      "、",
+      "？",
+      "！"
+    ]
+  },
+  "categories": [
+    {
+      "slug": "basics",
+      "name": "Basi",
+      "lessons": [
+        {
+          "slug": "objects-1",
+          "name": "Oggetti 1",
+          "items": [
+            {
+              "ja": "りんご",
+              "it": "mela",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "本",
+              "it": "libro",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "わたし は りんご を たべます",
+              "it": "Io mangio una mela",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "これ は 本 です",
+              "it": "Questo è un libro",
+              "image": "data/course-img/transparent.png"
+            }
+          ]
+        },
+        {
+          "slug": "drinks-1",
+          "name": "Bevande 1",
+          "items": [
+            {
+              "ja": "水",
+              "it": "acqua",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "お茶",
+              "it": "tè",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "お茶 を のみます",
+              "it": "Bevo tè",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "水 です",
+              "it": "È acqua",
+              "image": "data/course-img/transparent.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "greetings",
+      "name": "Saluti",
+      "lessons": [
+        {
+          "slug": "hello-1",
+          "name": "Ciao 1",
+          "items": [
+            {
+              "ja": "こんにちは",
+              "it": "ciao/buongiorno",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "ありがとう",
+              "it": "grazie",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "ありがとう ございます",
+              "it": "grazie (cortese)",
+              "image": "data/course-img/transparent.png"
+            }
+          ]
+        },
+        {
+          "slug": "people-1",
+          "name": "Persone 1",
+          "items": [
+            {
+              "ja": "ねこ",
+              "it": "gatto",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "いぬ",
+              "it": "cane",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "ねこ が います",
+              "it": "C'è un gatto",
+              "image": "data/course-img/transparent.png"
+            },
+            {
+              "ja": "いぬ も います",
+              "it": "C'è anche un cane",
+              "image": "data/course-img/transparent.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

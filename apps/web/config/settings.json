@@ -1,18 +1,18 @@
 {
   "database": {
     "production": {
-      "signUpEndpoint": "https://auth.librelingo.app/register",
+      "signUpEndpoint": "",
       "local": "localData",
-      "remote": "https://sync.librelingo.app",
+      "remote": "",
       "auth": {
         "expireDays": 150
       },
       "maxNumberOfListeners": 5000
     },
     "development": {
-      "signUpEndpoint": "http://localhost:8000/register",
+      "signUpEndpoint": "",
       "local": "localDataTesting",
-      "remote": "http://localhost:5984/",
+      "remote": "",
       "auth": {
         "expireDays": 1
       },

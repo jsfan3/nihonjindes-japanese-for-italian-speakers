@@ -9,49 +9,16 @@ The course content (text + images) is my own work-in-progress study material.
 
 ---
 
-## Rationale: JSON source-of-truth (while staying LibreLingo-native)
+## Rationale: JSON as single source of truth (while staying LibreLingo-native)
 
 LibreLingo courses are ultimately represented as YAML (course → modules → skills).  
-In this repository, we **keep course content in a single JSON specification** and *generate* the LibreLingo YAML from it.
+In this repository, I **keep course content in a single JSON specification** and *generate* the LibreLingo YAML from it.
 
 ### Why a JSON source-of-truth?
 - **Reproducibility**: the course can be regenerated deterministically from one file.
 - **Bulk editing**: easier to refactor categories/lessons/items than editing many YAML files by hand.
 - **Consistency**: IDs, slugs, thumbnails, and image variants are produced in a uniform way.
 - **Upstream compatibility**: the output is still the standard LibreLingo YAML + the standard web export format.
-
-### Pipeline overview
-1. **Edit**: `data/course-json/jp_course.json` (this is the only file meant to be edited for course content).
-2. **Generate YAML**: run `ll02_generate_course_from_json.py` to produce:
-   - `courses/japanese-from-italian/` (generated LibreLingo YAML course)
-   - `apps/web/static/images/` (generated image variants used by the web app)
-3. **Export for the web app**: run `scripts/exportYamlCourse.sh japanese-from-italian` to produce:
-   - `apps/web/src/courses/japanese-from-italian/` (web-export JSON: `courseData.json`, challenges, introductions, etc.)
-
-### Important note
-- Do **not** edit generated YAML under `courses/japanese-from-italian/` manually.
-  Always update the JSON spec and regenerate.
-
----
-
-## Repository layout (important folders)
-
-- `data/course-json/jp_course.json`  
-  **Source of truth** (“database”) for categories, lessons, items, and image paths.
-
-- `data/course-img/`  
-  Custom images referenced by the JSON.
-
-- `data/course-script/`  
-  Helper scripts:
-  - `ll02_generate_course_from_json.py` → JSON → LibreLingo YAML course (and imports images)
-  - (other helper scripts may be added over time)
-
-- `courses/japanese-from-italian/`  
-  Generated **LibreLingo YAML course** (do not edit by hand; regenerate from JSON).
-
-- `apps/web/src/courses/japanese-from-italian/`  
-  Generated **web-export JSON** (created by `exportYamlCourse.sh`).
 
 ---
 
@@ -84,54 +51,167 @@ python3 -m venv .venv
 ./.venv/bin/pip install -r data/course-script/requirements.txt
 ```
 
+3) Install the SvelteKit static adapter:
+```bash
+npm -w @librelingo/web i -D @sveltejs/adapter-static
+```
+
 ---
 
-## Course editing workflow (the only thing you should edit)
+## Pipeline overview
 
-To update the course, **only edit this JSON file**:
+1) **Edit (JSON source-of-truth)**:
+- GUI editor: `python3 data/course-json/jp_course_editor.py data/course-json/jp_course.json`
+- Smoke test (no GUI): `python3 data/course-json/jp_course_editor.py data/course-json/jp_course.json --self-test`
 
-`data/course-json/jp_course.json`
-
-### Images
-- The JSON references images (PNG or JPG) we place in `data/course-img/`.
+2) **Images**
+- The images referenced by the JSON (PNG or JPG) are placed in `data/course-img/`.
 - Images should ideally be **square** and **high-resolution**.
 - The generator will create 3 resized variants (for performance) under `apps/web/static/images/`.
 
----
-
-## Regenerate the course (JSON → YAML → Web export)
-
-After editing `data/course-json/jp_course.json`, run:
-
-1) Generate YAML course + import images:
+3) **Generate YAML**:
+run:
 ```bash
 ./.venv/bin/python data/course-script/ll02_generate_course_from_json.py \
-  --repo . \
-  --spec data/course-json/jp_course.json \
-  --prune-course
+    --repo . \
+    --spec data/course-json/jp_course.json \
+    --prune-course
 ```
+to produce:
+- `courses/japanese-from-italian/` (generated LibreLingo YAML course)
+- `apps/web/static/images/` (generated image variants used by the web app)
 
-2) Export the YAML course into the web-app JSON format:
+4) **Export for the web app**:
+run:
 ```bash
 bash scripts/exportYamlCourse.sh japanese-from-italian
 ```
+to produce:
+- `apps/web/src/courses/japanese-from-italian/` (web-exported JSON `courseData.json`, challenges, introductions, etc.)
 
-This second step is what produces the files the web app needs (e.g. `courseData.json`, challenges, introductions)
-under:
-`apps/web/src/courses/japanese-from-italian/`
-
----
-
-## Run the web app (development)
-
+5) **Run the web app (development)**
+run:
 ```bash
 npm run web-serve
 ```
-
 Then open:
 - `http://localhost:5173/`
 
-### Opening directly into the Japanese course (recommended)
+6) **Build the production static web app locally (for Apache or Nginx)**
+run:
+```bash
+npm run -w @librelingo/web build
+```
+Then the static output is in:
+`apps/web/build`
+
+**Deploy:** copy the contents of `apps/web/build/` to your web server docroot (example: `/var/www/nihonjindes/`) and serve it at `/`.
+
+Local preview:
+```bash
+npm run -w @librelingo/web preview
+```
+Then open:
+- `http://localhost:4173/`
+
+### Nginx example (SPA fallback to 200.html)
+
+> Important: this build uses `200.html` as the SPA fallback. Make sure both the *index* and the fallback point to `200.html`.
+
+```nginx
+server {
+  listen 80;
+  server_name example.com;
+
+  root /var/www/nihonjindes;
+  index 200.html;
+
+  location / {
+    try_files $uri $uri/ /200.html;
+  }
+
+  # Optional: cache immutable assets aggressively
+  location /_app/immutable/ {
+    add_header Cache-Control "public, max-age=31536000, immutable";
+    try_files $uri =404;
+  }
+}
+```
+
+### Apache 2.4+ example (SPA fallback to 200.html)
+
+```apache
+<VirtualHost *:80>
+  ServerName example.com
+  DocumentRoot /var/www/nihonjindes
+
+  <Directory "/var/www/nihonjindes">
+    Require all granted
+    Options FollowSymLinks
+    AllowOverride None
+
+    # Serve 200.html at /
+    DirectoryIndex 200.html
+
+    # SPA fallback
+    FallbackResource /200.html
+  </Directory>
+</VirtualHost>
+```
+
+If `FallbackResource` is not available/enabled on your Apache build, use a rewrite fallback instead:
+
+```apache
+<Directory "/var/www/nihonjindes">
+  Require all granted
+  Options FollowSymLinks
+  AllowOverride None
+
+  DirectoryIndex 200.html
+
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ /200.html [L]
+</Directory>
+```
+
+---
+
+## Important note
+- Do **not** edit generated YAML under `courses/japanese-from-italian/` manually.
+  Always update the JSON spec and regenerate.
+  Here are two screenshots of the GUI editor that I created for this course:
+
+![Screenshot 1](./nihonjindes-json-editor-1.png)
+![Screenshot 2](./nihonjindes-json-editor-2.png)
+
+---
+
+## Repository layout (important folders)
+
+- `data/course-json/jp_course.json`  
+  **Single source of truth** (“database”) for categories, lessons, items, and image paths.
+
+- `data/course-img/`  
+  Custom images referenced by the JSON.
+
+- `data/course-script/`  
+  Helper scripts:
+  - `ll02_generate_course_from_json.py` → JSON → LibreLingo YAML course (and imports images)
+  - (other helper scripts may be added over time)
+
+- `courses/japanese-from-italian/`  
+  Generated **LibreLingo YAML course** (do not edit by hand; regenerate from JSON).
+
+- `apps/web/src/courses/japanese-from-italian/`  
+  Generated **web-export JSON** (created by `exportYamlCourse.sh`).
+
+---
+
+## Opening directly into the Japanese course (recommended)
+
 I added this file to redirect directly to the Japanese course:
 
 `apps/web/src/routes/+page.ts`
@@ -146,13 +226,7 @@ export const load = () => {
 
 ---
 
-## VPS Deployment
-
-See `README_VPS_UBUNTU_24_04.md`.
-
----
-
 ## Links
 
-- Upstream: LibreLingo Community https://github.com/LibreLingoCommunity/LibreLingo
-- Live instance: https://www.nihonjindes.net/
+- Upstream: [LibreLingo Community](https://github.com/LibreLingoCommunity/LibreLingo)
+- Live instance: <https://www.nihonjindes.net/>
