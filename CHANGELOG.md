@@ -1,7 +1,9 @@
 ## 0.0.3
 
 Added UI editor for jp_course.json and support for static web builds (Apache and Nginx)
+
 The README.md file now contains documentation on how to use this repository.
+
 Removed old FreeLingo documentation unnecessary for Nihonjindes usage.
 
 ## 0.0.2
