@@ -1,0 +1,214 @@
+{
+  "id": "7f45966d31d1",
+  "levels": 2,
+  "challenges": [
+    {
+      "type": "options",
+      "formInTargetLanguage": "お茶 を のみます",
+      "meaningInSourceLanguage": "Bevo tè",
+      "id": "92813191866a",
+      "priority": 0,
+      "group": "8cc37f909c64"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "Bevo",
+          "definition": "Bevo"
+        },
+        {
+          "word": "tè",
+          "definition": "tè\nお茶"
+        }
+      ],
+      "chips": [
+        "お茶",
+        "を",
+        "のみます",
+        "は",
+        "本"
+      ],
+      "solutions": [
+        [
+          "お茶",
+          "を",
+          "のみます"
+        ]
+      ],
+      "formattedSolution": "お茶 を のみます",
+      "id": "66cfe9adc3ea",
+      "priority": 2,
+      "group": "8cc37f909c64"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "お茶",
+          "definition": "tè"
+        },
+        {
+          "word": "を",
+          "definition": "particella oggetto (o)"
+        },
+        {
+          "word": "のみます",
+          "definition": "bere (forma cortese) (nomimasu)"
+        }
+      ],
+      "chips": [
+        "Bevo",
+        "tè",
+        "Io",
+        "è"
+      ],
+      "solutions": [
+        [
+          "Bevo",
+          "tè"
+        ]
+      ],
+      "formattedSolution": "Bevo tè",
+      "id": "2e7b28f6d17c",
+      "priority": 2,
+      "group": "8cc37f909c64"
+    },
+    {
+      "type": "options",
+      "formInTargetLanguage": "水 です",
+      "meaningInSourceLanguage": "È acqua",
+      "id": "840a73dafd09",
+      "priority": 0,
+      "group": "a9be7956a1c1"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "È",
+          "definition": "è"
+        },
+        {
+          "word": "acqua",
+          "definition": "acqua\n水"
+        }
+      ],
+      "chips": [
+        "水",
+        "です",
+        "は",
+        "を"
+      ],
+      "solutions": [
+        [
+          "水",
+          "です"
+        ]
+      ],
+      "formattedSolution": "水 です",
+      "id": "d3febdddfbff",
+      "priority": 2,
+      "group": "a9be7956a1c1"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "水",
+          "definition": "acqua"
+        },
+        {
+          "word": "です",
+          "definition": "copula (forma cortese)"
+        }
+      ],
+      "chips": [
+        "È",
+        "acqua",
+        "è",
+        "un"
+      ],
+      "solutions": [
+        [
+          "È",
+          "acqua"
+        ]
+      ],
+      "formattedSolution": "È acqua",
+      "id": "00ce3b107a0f",
+      "priority": 2,
+      "group": "a9be7956a1c1"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "水",
+      "meaningInSourceLanguage": "acqua",
+      "id": "ab739eba79f6",
+      "priority": 0,
+      "group": "7a8f0f3a5af0"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "水"
+      ],
+      "phrase": [
+        {
+          "word": "acqua",
+          "definition": "acqua\n水"
+        }
+      ],
+      "id": "ef49c04a9de6",
+      "priority": 1,
+      "group": "7a8f0f3a5af0"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "お茶",
+      "meaningInSourceLanguage": "tè",
+      "id": "7fcb2b6a5eef",
+      "priority": 0,
+      "group": "2e84ebaab5f0"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "お茶"
+      ],
+      "phrase": [
+        {
+          "word": "tè",
+          "definition": "tè\nお茶"
+        }
+      ],
+      "id": "6dd44de9b7eb",
+      "priority": 1,
+      "group": "2e84ebaab5f0"
+    }
+  ]
+}

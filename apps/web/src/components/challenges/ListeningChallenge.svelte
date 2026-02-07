@@ -46,7 +46,7 @@
 					.replace(/\s+/g, ' ')
 					.toLowerCase() === answer.toLowerCase()
 					? ''
-					: `Correct spelling: ${form}`;
+					: `Ortografia corretta: ${form}`;
 		}
 
 		registerResult(correct);
@@ -76,7 +76,7 @@
 
 <form on:submit|preventDefault={submitChallenge}>
 	<div class="section">
-		<p class="is-size-1 is-size-2-tablet is-size-4-mobile has-text-centered">Type what you hear</p>
+		<p class="is-size-1 is-size-2-tablet is-size-4-mobile has-text-centered">Scrivi ciò che senti</p>
 	</div>
 
 	<Columns>
@@ -98,7 +98,7 @@
 	{#if answer && !submitted}
 		<ChallengePanel
 			message=""
-			buttonText="Submit"
+			buttonText="Invia"
 			submit
 			skipAction={skipChallenge}
 			skipAllAction={skipAllChallenges}
@@ -119,9 +119,9 @@
 	{#if submitted}
 		{#if !correct}
 			<ChallengePanel
-				message="Incorrect solution!"
-				messageDetail={`Correct answer: ${challenge.answer}`}
-				buttonText="Continue"
+				message="Soluzione errata!"
+				messageDetail={`Risposta corretta: ${challenge.answer}`}
+				buttonText="Continua"
 				incorrect
 				buttonAction={finishChallenge}
 			/>
@@ -130,9 +130,9 @@
 		{#if correct}
 			{#if !spellingSuggestion}
 				<ChallengePanel
-					message="Correct solution!"
-					messageDetail={`Meaning: "${challenge.meaning}"`}
-					buttonText="Continue"
+					message="Soluzione corretta!"
+					messageDetail={`Significato: "${challenge.meaning}"`}
+					buttonText="Continua"
 					correct
 					buttonAction={finishChallenge}
 				/>
@@ -140,9 +140,9 @@
 
 			{#if spellingSuggestion}
 				<ChallengePanel
-					message="You have a typo!"
-					messageDetail={spellingSuggestion || `Meaning: "${challenge.meaning}"`}
-					buttonText="Continue"
+					message="Hai un errore di battitura!"
+					messageDetail={spellingSuggestion || `Significato: "${challenge.meaning}"`}
+					buttonText="Continua"
 					typo
 					buttonAction={finishChallenge}
 				/>

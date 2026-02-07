@@ -32,11 +32,11 @@
 <Panel {background}>
 	<div slot="left">
 		{#if skipAction}
-			<Button on:click={skipAction}>Skip</Button>
+			<Button on:click={skipAction}>Salta</Button>
 		{/if}
-		<Button on:click={skipAllAction}>Cancel</Button>
+		<Button on:click={skipAllAction}>Annulla</Button>
 		{#if skipAllVoice}
-			<Button on:click={skipAllVoice}>Can't listen now</Button>
+			<Button on:click={skipAllVoice}>Non posso ascoltare ora</Button>
 		{/if}
 		{#if message}<b>{message}</b>{/if}
 		{#if messageDetail}
@@ -51,7 +51,7 @@
 			</Button>
 		{/if}
 		{#if submit}
-			<Button style="primary" type="submit">Submit</Button>
+			<Button style="primary" type="submit">Invia</Button>
 		{/if}
 	</div>
 </Panel>

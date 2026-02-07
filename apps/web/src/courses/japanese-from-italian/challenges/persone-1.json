@@ -1,0 +1,239 @@
+{
+  "id": "7435638967d1",
+  "levels": 2,
+  "challenges": [
+    {
+      "type": "options",
+      "formInTargetLanguage": "ねこ が います",
+      "meaningInSourceLanguage": "C'è un gatto",
+      "id": "57d7c7b94cdd",
+      "priority": 0,
+      "group": "1f78770f921a"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "C'è",
+          "definition": "C'è"
+        },
+        {
+          "word": "un",
+          "definition": "un"
+        },
+        {
+          "word": "gatto",
+          "definition": "gatto\nねこ"
+        }
+      ],
+      "chips": [
+        "ねこ",
+        "が",
+        "います",
+        "は",
+        "を"
+      ],
+      "solutions": [
+        [
+          "ねこ",
+          "が",
+          "います"
+        ]
+      ],
+      "formattedSolution": "ねこ が います",
+      "id": "c62ba830aac4",
+      "priority": 2,
+      "group": "1f78770f921a"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "ねこ",
+          "definition": "gatto"
+        },
+        {
+          "word": "が",
+          "definition": "particella soggetto/focus (ga)"
+        },
+        {
+          "word": "います",
+          "definition": "esserci (animati) (forma cortese) (imasu)"
+        }
+      ],
+      "chips": [
+        "C'è",
+        "un",
+        "gatto",
+        "tè",
+        "Io"
+      ],
+      "solutions": [
+        [
+          "C'è",
+          "un",
+          "gatto"
+        ]
+      ],
+      "formattedSolution": "C'è un gatto",
+      "id": "35a81ad4523a",
+      "priority": 2,
+      "group": "1f78770f921a"
+    },
+    {
+      "type": "options",
+      "formInTargetLanguage": "いぬ も います",
+      "meaningInSourceLanguage": "C'è anche un cane",
+      "id": "75cbeef77f57",
+      "priority": 0,
+      "group": "c788174e9334"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "C'è",
+          "definition": "C'è"
+        },
+        {
+          "word": "anche",
+          "definition": "anche"
+        },
+        {
+          "word": "un",
+          "definition": "un"
+        },
+        {
+          "word": "cane",
+          "definition": "cane\nいぬ"
+        }
+      ],
+      "chips": [
+        "いぬ",
+        "も",
+        "います",
+        "は",
+        "を"
+      ],
+      "solutions": [
+        [
+          "いぬ",
+          "も",
+          "います"
+        ]
+      ],
+      "formattedSolution": "いぬ も います",
+      "id": "340f4f82a71e",
+      "priority": 2,
+      "group": "c788174e9334"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "いぬ",
+          "definition": "cane"
+        },
+        {
+          "word": "も",
+          "definition": "particella 'anche' (mo)"
+        },
+        {
+          "word": "います",
+          "definition": "esserci (animati) (forma cortese) (imasu)"
+        }
+      ],
+      "chips": [
+        "C'è",
+        "anche",
+        "un",
+        "cane",
+        "una",
+        "è",
+        "tè"
+      ],
+      "solutions": [
+        [
+          "C'è",
+          "anche",
+          "un",
+          "cane"
+        ]
+      ],
+      "formattedSolution": "C'è anche un cane",
+      "id": "f2ecbaf3ee6b",
+      "priority": 2,
+      "group": "c788174e9334"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "ねこ",
+      "meaningInSourceLanguage": "gatto",
+      "id": "192e936e3f3a",
+      "priority": 0,
+      "group": "7c4d155f9fd8"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "ねこ"
+      ],
+      "phrase": [
+        {
+          "word": "gatto",
+          "definition": "gatto\nねこ"
+        }
+      ],
+      "id": "172cb5bea744",
+      "priority": 1,
+      "group": "7c4d155f9fd8"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "いぬ",
+      "meaningInSourceLanguage": "cane",
+      "id": "4eda4ab7686c",
+      "priority": 0,
+      "group": "32110a4d5ada"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "いぬ"
+      ],
+      "phrase": [
+        {
+          "word": "cane",
+          "definition": "cane\nいぬ"
+        }
+      ],
+      "id": "3e3d5fbb137f",
+      "priority": 1,
+      "group": "32110a4d5ada"
+    }
+  ]
+}

@@ -72,11 +72,6 @@ git_stats/
 localData/
 
 
-# Courses
-/apps/web/src/courses/*-*
-/courses/*-*
-
-
 
 # PDM
 .pdm.toml

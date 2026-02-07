@@ -1,12 +1,5 @@
 node_modules
 
-# Static assets
-/static/sound
-/static/voice/**
-static/course/**
-
-/src/courses/*
-
 # Output
 .output
 .vercel

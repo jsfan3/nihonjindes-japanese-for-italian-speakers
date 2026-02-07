@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-	<title>LibreLingo - learn {skillName} in {languageName} for free</title>
+	<title>Nihonjindes - Impara il giapponese gratuitamente</title>
 </svelte:head>
 
 <NavBar {repositoryURL} />

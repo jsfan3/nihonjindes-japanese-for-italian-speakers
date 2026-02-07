@@ -45,7 +45,7 @@
 </script>
 
 <p class="is-size-1 is-size-2-tablet is-size-4-mobile has-text-centered">
-	Which of these is
+	Quale di questi è
 	<strong data-test="meaning-in-source-language">
 		{currentChallenge.meaningInSourceLanguage}
 	</strong>
@@ -58,7 +58,7 @@
 	{#if !submitted && selectedOption !== null}
 		<ChallengePanel
 			message=""
-			buttonText="Submit"
+			buttonText="Invia"
 			submit
 			skipAction={skipChallenge}
 			skipAllAction={skipAllChallenges}
@@ -77,17 +77,17 @@
 	{#if submitted}
 		{#if options[selectedOption].correct}
 			<ChallengePanel
-				message="Correct solution!"
-				buttonText="Continue"
+				message="Soluzione corretta!"
+				buttonText="Continua"
 				correct
 				buttonAction={finishChallenge}
 			/>
 		{/if}
 		{#if !options[selectedOption].correct}
 			<ChallengePanel
-				message="Incorrect solution!"
-				messageDetail={`Correct answer: ${currentChallenge.formInTargetLanguage}`}
-				buttonText="Continue"
+				message="Soluzione errata!"
+				messageDetail={`Risposta corretta: ${currentChallenge.formInTargetLanguage}`}
+				buttonText="Continua"
 				incorrect
 				buttonAction={finishChallenge}
 			/>

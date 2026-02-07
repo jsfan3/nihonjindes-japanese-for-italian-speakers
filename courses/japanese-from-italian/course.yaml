@@ -1,0 +1,23 @@
+Course:
+  Language:
+    Name: Japanese
+    IETF BCP 47: ja
+  For speakers of:
+    Name: Italian
+    IETF BCP 47: it
+  License:
+    Name: CC BY-SA 4.0 International
+    Short name: CC BY-SA 4.0
+    Link: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+  Repository: https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers.git
+  Special characters:
+  - ー
+  - 。
+  - 、
+  - ？
+  - ！
+  Name: 'Nihonjindes: Japanese for Italian speakers'
+  Description: Course generated from JSON; edit this file to add categories/lessons/items.
+Modules:
+- basics/
+- greetings/

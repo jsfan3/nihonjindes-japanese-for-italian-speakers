@@ -44,17 +44,13 @@
 				</Column>
 				<Column size="2/5">
 					<div class="is-centered-mobile">
-						<Title size={2} sizeMobile="3" multiline>Lesson completed!</Title>
+						<Title size={2} sizeMobile="3" multiline>Lezione completata!</Title>
 						<Title size={2} isSubtitle={true} multiline>
-							You've completed
+							Hai risposto a
 							{stats.correct}
-							challenges
+							esercizi
 						</Title>
-						<Button size="medium" href={courseURL} style="primary">Continue to course page</Button>
-						<div class="bottom">
-							<Title size={5}>Excited about LibreLingo?</Title>
-							<TwitterButton />
-						</div>
+						<Button size="medium" href={courseURL} style="primary">Continua sulla pagina del corso</Button>
 					</div>
 				</Column>
 			</Columns>

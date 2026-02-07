@@ -116,7 +116,7 @@
 <form on:submit|preventDefault={submitChallenge}>
 	<div class="section">
 		<p class="is-size-1 is-size-2-tablet is-size-4-mobile has-text-centered">
-			Translate
+			Traduci
 			<Phrase phrase={challenge.phrase} />
 		</p>
 	</div>
@@ -137,7 +137,7 @@
 			</div>
 		</div>
 
-		<p class="sub-instructions">Use these words:</p>
+		<p class="sub-instructions">Usa queste parole:</p>
 		<div id="chips" class="chips" bind:this={chipsElement}>
 			{#each chipsToRender as chip, index}
 				<span class="chip" data-id={chip} on:click={handleChipClick} on:keypress={handleChipClick}>
@@ -159,7 +159,7 @@
 	{#if $answer.length > 0 && !submitted}
 		<ChallengePanel
 			message=""
-			buttonText="Submit"
+			buttonText="Invia"
 			submit
 			skipAction={skipChallenge}
 			skipAllAction={skipAllChallenges}
@@ -169,17 +169,17 @@
 	{#if submitted}
 		{#if !correct}
 			<ChallengePanel
-				message="Incorrect solution!"
-				messageDetail={`Correct answer: ${challenge.formattedSolution}`}
-				buttonText="Continue"
+				message="Soluzione errata!"
+				messageDetail={`Risposta corretta: ${challenge.formattedSolution}`}
+				buttonText="Continua"
 				incorrect
 				buttonAction={finishChallenge}
 			/>
 		{/if}
 		{#if correct}
 			<ChallengePanel
-				message="Correct solution!"
-				buttonText="Continue"
+				message="Soluzione corretta!"
+				buttonText="Continua"
 				correct
 				buttonAction={finishChallenge}
 			/>

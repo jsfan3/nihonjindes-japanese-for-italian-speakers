@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-	<title>LibreLingo - learn {languageName} for free</title>
+	<title>Nihonjindes - Esercizi di giapponese per italiani</title>
 </svelte:head>
 
 <NavBar hasAuth {repositoryURL} />
@@ -48,22 +48,19 @@
 	<Content>
 		<Columns>
 			<Column>
-				<strong>LibreLingo</strong>
-				by
-				<a href="https://github.com/kantord">Dániel Kántor</a>
-				and
-				<a href="https://github.com/LibreLingo/LibreLingo#contributors"> various contributors </a>
-				.
+				<strong>Nihonjindes</strong>
+				by <a href="https://www.informatica-libera.net/">Francesco Galgani</a> e basato su un 
+				<a href="https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers?tab=readme-ov-file">fork di LibreLingo</a>. Il contenuto del corso (testo + immagini) segue il mio percorso personale di studio, e lo sto preparando e aggiornando via via. E' in una fase preliminare di preparazione.
 			</Column>
 			<Column>
-				The source code is licensed
-				<a href="https://opensource.org/licenses/AGPL-3.0">AGPL-3.0.</a>
-				<br />
-				<a href="https://github.com/LibreLingo/LibreLingo"> Source code available on GitHub. </a>
+				Il codice sorgente ha licenza
+				<a href="https://opensource.org/licenses/AGPL-3.0">AGPL-3.0.</a><br />
+                I contenuti del corso hanno licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International</a>.
 			</Column>
-			<Column />
+            <Column>
+            Un ringraziamento particolare a <a href="https://www.nipponita.com/it/">Michela Viera (NipponITA)</a>.
+			</Column>
 		</Columns>
-		<p></p>
 	</Content>
 </Footer>
 

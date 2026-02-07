@@ -27,7 +27,7 @@
 
 <NavBar>
 	<div slot="left">
-		<Logo src="/images/logo.svg" alt="LibreLingo" link={homepageLink} />
+		<Logo src="/images/logo.svg" alt="Nihonjindes" link={homepageLink} />
 	</div>
 
 	<div slot="right">
@@ -35,7 +35,7 @@
 			{#if repositoryURL}
 				<NavBarButton href={repositoryURL} target="_blank">Feedback</NavBarButton>
 			{/if}
-			{#if hasAuth && settings.features.authEnabled}
+			{#if hasAuth && settings.features.authEnabled && false}
 				{#if $authStore.user}
 					<NavBarItem>
 						<Icon size="small" icon="user" />

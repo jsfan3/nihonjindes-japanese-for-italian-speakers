@@ -1,0 +1,140 @@
+{
+  "id": "5ece4fc3a3ea",
+  "levels": 1,
+  "challenges": [
+    {
+      "type": "options",
+      "formInTargetLanguage": "ありがとう ございます",
+      "meaningInSourceLanguage": "grazie (cortese)",
+      "id": "633e20c2780f",
+      "priority": 0,
+      "group": "5019cba2fdc0"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "grazie",
+          "definition": "grazie\nありがとう"
+        },
+        {
+          "word": "(cortese)",
+          "definition": "cortese"
+        }
+      ],
+      "chips": [
+        "ありがとう",
+        "ございます",
+        "います",
+        "たべます"
+      ],
+      "solutions": [
+        [
+          "ありがとう",
+          "ございます"
+        ]
+      ],
+      "formattedSolution": "ありがとう ございます",
+      "id": "5f50dc976dd3",
+      "priority": 2,
+      "group": "5019cba2fdc0"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "ありがとう",
+          "definition": "grazie"
+        },
+        {
+          "word": "ございます",
+          "definition": "essere/esistere (forma cortese) (gozaimasu)"
+        }
+      ],
+      "chips": [
+        "grazie",
+        "cortese",
+        "cane",
+        "gatto"
+      ],
+      "solutions": [
+        [
+          "grazie",
+          "cortese"
+        ]
+      ],
+      "formattedSolution": "grazie (cortese)",
+      "id": "09f71567cc18",
+      "priority": 2,
+      "group": "5019cba2fdc0"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "こんにちは",
+      "meaningInSourceLanguage": "ciao/buongiorno",
+      "id": "107f4123a5ba",
+      "priority": 0,
+      "group": "b758de81a3d2"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "こんにちは"
+      ],
+      "phrase": [
+        {
+          "word": "ciao/buongiorno",
+          "definition": "ciao/buongiorno\nこんにちは"
+        }
+      ],
+      "id": "05a70e83f5e8",
+      "priority": 1,
+      "group": "b758de81a3d2"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "ありがとう",
+      "meaningInSourceLanguage": "grazie",
+      "id": "42f7c51eaee2",
+      "priority": 0,
+      "group": "7cb2e344faee"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "ありがとう"
+      ],
+      "phrase": [
+        {
+          "word": "grazie",
+          "definition": "grazie\nありがとう"
+        }
+      ],
+      "id": "c1c1d14af087",
+      "priority": 1,
+      "group": "7cb2e344faee"
+    }
+  ]
+}

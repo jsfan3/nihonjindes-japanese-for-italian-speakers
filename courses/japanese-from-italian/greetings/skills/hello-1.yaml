@@ -1,0 +1,32 @@
+Skill:
+  Id: 462506d7-8596-43a5-86ad-2f1b6bfa482b
+  Name: Ciao 1
+  Thumbnails:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+New words:
+- Word: こんにちは
+  Translation: ciao/buongiorno
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+- Word: ありがとう
+  Translation: grazie
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+Phrases:
+- Phrase: ありがとう ございます
+  Translation: grazie (cortese)
+Mini-dictionary:
+  Japanese:
+  - ありがとう: grazie
+  - こんにちは: ciao/buongiorno
+  - ございます: essere/esistere (forma cortese) (gozaimasu)
+  Italian:
+  - ciao/buongiorno: ciao/buongiorno
+  - cortese: cortese
+  - grazie: grazie

@@ -1,0 +1,39 @@
+Skill:
+  Id: fac027c5-0eb7-463e-9f9d-0854fcd172af
+  Name: Bevande 1
+  Thumbnails:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+New words:
+- Word: 水
+  Translation: acqua
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+- Word: お茶
+  Translation: tè
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+Phrases:
+- Phrase: お茶 を のみます
+  Translation: Bevo tè
+- Phrase: 水 です
+  Translation: È acqua
+Mini-dictionary:
+  Japanese:
+  - お茶: tè
+  - です: copula (forma cortese)
+  - のみます: bere (forma cortese) (nomimasu)
+  - を: particella oggetto (o)
+  - 水: acqua
+  Italian:
+  - Bevo: Bevo
+  - acqua: acqua
+  - bevo: bevo
+  - tè: tè
+  - È: È
+  - è: è

@@ -1,0 +1,46 @@
+Skill:
+  Id: b45b162c-12e9-4336-a785-d3a39358be66
+  Name: Oggetti 1
+  Thumbnails:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+New words:
+- Word: りんご
+  Translation: mela
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+- Word: 本
+  Translation: libro
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+Phrases:
+- Phrase: わたし は りんご を たべます
+  Translation: Io mangio una mela
+- Phrase: これ は 本 です
+  Translation: Questo è un libro
+Mini-dictionary:
+  Japanese:
+  - これ: questo (kore)
+  - たべます: mangiare (forma cortese) (tabemasu)
+  - です: copula (forma cortese)
+  - は: particella di tema (wa)
+  - りんご: mela
+  - わたし: io (watashi)
+  - を: particella oggetto (o)
+  - 本: libro
+  Italian:
+  - Io: Io
+  - Questo: Questo
+  - io: io
+  - libro: libro
+  - mangio: mangio
+  - mela: mela
+  - questo: questo
+  - un: un
+  - una: una
+  - è: è

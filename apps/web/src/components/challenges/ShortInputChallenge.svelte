@@ -61,7 +61,7 @@
 <form on:submit|preventDefault={submitChallenge}>
 	<div class="section">
 		<p class="is-size-1 is-size-2-tablet is-size-4-mobile has-text-centered">
-			Type
+			Scrivi
 			<Phrase phrase={challenge.phrase} />
 			in
 			{languageName}!
@@ -90,7 +90,7 @@
 	{#if answer && !submitted}
 		<ChallengePanel
 			message=""
-			buttonText="Submit"
+			buttonText="Invia"
 			submit
 			skipAction={skipChallenge}
 			skipAllAction={skipAllChallenges}
@@ -109,9 +109,9 @@
 	{#if submitted}
 		{#if !correct}
 			<ChallengePanel
-				message="Incorrect solution!"
-				messageDetail={`Correct answer: ${challenge.formInTargetLanguage[0]}`}
-				buttonText="Continue"
+				message="Soluzione errata!"
+				messageDetail={`Risposta corretta: ${challenge.formInTargetLanguage[0]}`}
+				buttonText="Continua"
 				incorrect
 				buttonAction={finishChallenge}
 			/>
@@ -119,9 +119,9 @@
 		{#if correct}
 			{#if !spellingSuggestion}
 				<ChallengePanel
-					message="Correct solution!"
+					message="Soluzione corretta!"
 					messageDetail=""
-					buttonText="Continue"
+					buttonText="Continua"
 					correct
 					buttonAction={finishChallenge}
 				/>
@@ -129,9 +129,9 @@
 
 			{#if spellingSuggestion}
 				<ChallengePanel
-					message="You have a typo!"
+					message="Hai un errore di battitura!"
 					messageDetail={spellingSuggestion}
-					buttonText="Continue"
+					buttonText="Continua"
 					typo
 					buttonAction={finishChallenge}
 				/>

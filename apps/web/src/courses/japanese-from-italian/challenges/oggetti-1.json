@@ -1,0 +1,267 @@
+{
+  "id": "0b2c7f1966d3",
+  "levels": 2,
+  "challenges": [
+    {
+      "type": "options",
+      "formInTargetLanguage": "わたし は りんご を たべます",
+      "meaningInSourceLanguage": "Io mangio una mela",
+      "id": "ccc9471f5955",
+      "priority": 0,
+      "group": "2c2b5a804971"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "Io",
+          "definition": "Io"
+        },
+        {
+          "word": "mangio",
+          "definition": "mangio"
+        },
+        {
+          "word": "una",
+          "definition": "una"
+        },
+        {
+          "word": "mela",
+          "definition": "mela\nりんご"
+        }
+      ],
+      "chips": [
+        "わたし",
+        "は",
+        "りんご",
+        "を",
+        "たべます",
+        "本",
+        "水",
+        "が",
+        "も"
+      ],
+      "solutions": [
+        [
+          "わたし",
+          "は",
+          "りんご",
+          "を",
+          "たべます"
+        ]
+      ],
+      "formattedSolution": "わたし は りんご を たべます",
+      "id": "8f44b06ad126",
+      "priority": 2,
+      "group": "2c2b5a804971"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "わたし",
+          "definition": "io (watashi)"
+        },
+        {
+          "word": "は",
+          "definition": "particella di tema (wa)"
+        },
+        {
+          "word": "りんご",
+          "definition": "mela"
+        },
+        {
+          "word": "を",
+          "definition": "particella oggetto (o)"
+        },
+        {
+          "word": "たべます",
+          "definition": "mangiare (forma cortese) (tabemasu)"
+        }
+      ],
+      "chips": [
+        "Io",
+        "mangio",
+        "una",
+        "mela",
+        "un",
+        "è",
+        "Bevo"
+      ],
+      "solutions": [
+        [
+          "Io",
+          "mangio",
+          "una",
+          "mela"
+        ]
+      ],
+      "formattedSolution": "Io mangio una mela",
+      "id": "e26d091e1cbe",
+      "priority": 2,
+      "group": "2c2b5a804971"
+    },
+    {
+      "type": "options",
+      "formInTargetLanguage": "これ は 本 です",
+      "meaningInSourceLanguage": "Questo è un libro",
+      "id": "1c7386989c2b",
+      "priority": 0,
+      "group": "a007a14015a4"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "Questo",
+          "definition": "Questo"
+        },
+        {
+          "word": "è",
+          "definition": "è"
+        },
+        {
+          "word": "un",
+          "definition": "un"
+        },
+        {
+          "word": "libro",
+          "definition": "libro\n本"
+        }
+      ],
+      "chips": [
+        "これ",
+        "は",
+        "本",
+        "です",
+        "を",
+        "水",
+        "が"
+      ],
+      "solutions": [
+        [
+          "これ",
+          "は",
+          "本",
+          "です"
+        ]
+      ],
+      "formattedSolution": "これ は 本 です",
+      "id": "c7363bec47f5",
+      "priority": 2,
+      "group": "a007a14015a4"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "これ",
+          "definition": "questo (kore)"
+        },
+        {
+          "word": "は",
+          "definition": "particella di tema (wa)"
+        },
+        {
+          "word": "本",
+          "definition": "libro"
+        },
+        {
+          "word": "です",
+          "definition": "copula (forma cortese)"
+        }
+      ],
+      "chips": [
+        "Questo",
+        "è",
+        "un",
+        "libro",
+        "Io",
+        "tè",
+        "una"
+      ],
+      "solutions": [
+        [
+          "Questo",
+          "è",
+          "un",
+          "libro"
+        ]
+      ],
+      "formattedSolution": "Questo è un libro",
+      "id": "e3c9067d791c",
+      "priority": 2,
+      "group": "a007a14015a4"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "りんご",
+      "meaningInSourceLanguage": "mela",
+      "id": "88fb382d831f",
+      "priority": 0,
+      "group": "b0d286330869"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "りんご"
+      ],
+      "phrase": [
+        {
+          "word": "mela",
+          "definition": "mela\nりんご"
+        }
+      ],
+      "id": "65ee04acb3cb",
+      "priority": 1,
+      "group": "b0d286330869"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": "本",
+      "meaningInSourceLanguage": "libro",
+      "id": "be690642ce4b",
+      "priority": 0,
+      "group": "94d2092e3695"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg",
+        "japanese-from-italian_cf1bb117d603.jpg"
+      ],
+      "formInTargetLanguage": [
+        "本"
+      ],
+      "phrase": [
+        {
+          "word": "libro",
+          "definition": "libro\n本"
+        }
+      ],
+      "id": "334982b55bfe",
+      "priority": 1,
+      "group": "94d2092e3695"
+    }
+  ]
+}

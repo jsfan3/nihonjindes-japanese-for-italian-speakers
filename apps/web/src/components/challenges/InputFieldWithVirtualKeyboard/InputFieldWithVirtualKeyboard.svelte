@@ -55,7 +55,7 @@
 	type="text"
 	class="input"
 	autofocus
-	placeholder="Type your answer…"
+	placeholder="Scrivi la tua risposta…"
 	{disabled}
 	spellcheck="false"
 	autocapitalize="none"

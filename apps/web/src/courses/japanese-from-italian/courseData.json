@@ -1,0 +1,99 @@
+{
+  "languageName": "Japanese",
+  "languageCode": "ja",
+  "uiLanguage": "it",
+  "specialCharacters": [
+    "ー",
+    "。",
+    "、",
+    "？",
+    "！"
+  ],
+  "repositoryURL": "https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers.git",
+  "license": {
+    "name": {
+      "short": "CC BY-SA 4.0",
+      "full": "CC BY-SA 4.0 International"
+    },
+    "link": "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+  },
+  "modules": [
+    {
+      "title": "Basi",
+      "skills": [
+        {
+          "imageSet": [
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603"
+          ],
+          "summary": [
+            "りんご",
+            "本",
+            "わたし は りんご を たべます",
+            "これ は 本 です"
+          ],
+          "practiceHref": "oggetti-1",
+          "id": "0b2c7f1966d3",
+          "title": "Oggetti 1",
+          "levels": 2
+        },
+        {
+          "imageSet": [
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603"
+          ],
+          "summary": [
+            "水",
+            "お茶",
+            "お茶 を のみます",
+            "水 です"
+          ],
+          "practiceHref": "bevande-1",
+          "id": "7f45966d31d1",
+          "title": "Bevande 1",
+          "levels": 2
+        }
+      ]
+    },
+    {
+      "title": "Saluti",
+      "skills": [
+        {
+          "imageSet": [
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603"
+          ],
+          "summary": [
+            "こんにちは",
+            "ありがとう",
+            "ありがとう ございます"
+          ],
+          "practiceHref": "ciao-1",
+          "id": "5ece4fc3a3ea",
+          "title": "Ciao 1",
+          "levels": 1
+        },
+        {
+          "imageSet": [
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603",
+            "japanese-from-italian_cf1bb117d603"
+          ],
+          "summary": [
+            "ねこ",
+            "いぬ",
+            "ねこ が います",
+            "いぬ も います"
+          ],
+          "practiceHref": "persone-1",
+          "id": "7435638967d1",
+          "title": "Persone 1",
+          "levels": 2
+        }
+      ]
+    }
+  ]
+}

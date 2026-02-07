@@ -9,6 +9,31 @@ The course content (text + images) is my own work-in-progress study material.
 
 ---
 
+## Rationale: JSON source-of-truth (while staying LibreLingo-native)
+
+LibreLingo courses are ultimately represented as YAML (course → modules → skills).  
+In this repository, we **keep course content in a single JSON specification** and *generate* the LibreLingo YAML from it.
+
+### Why a JSON source-of-truth?
+- **Reproducibility**: the course can be regenerated deterministically from one file.
+- **Bulk editing**: easier to refactor categories/lessons/items than editing many YAML files by hand.
+- **Consistency**: IDs, slugs, thumbnails, and image variants are produced in a uniform way.
+- **Upstream compatibility**: the output is still the standard LibreLingo YAML + the standard web export format.
+
+### Pipeline overview
+1. **Edit**: `data/course-json/jp_course.json` (this is the only file meant to be edited for course content).
+2. **Generate YAML**: run `ll02_generate_course_from_json.py` to produce:
+   - `courses/japanese-from-italian/` (generated LibreLingo YAML course)
+   - `apps/web/static/images/` (generated image variants used by the web app)
+3. **Export for the web app**: run `scripts/exportYamlCourse.sh japanese-from-italian` to produce:
+   - `apps/web/src/courses/japanese-from-italian/` (web-export JSON: `courseData.json`, challenges, introductions, etc.)
+
+### Important note
+- Do **not** edit generated YAML under `courses/japanese-from-italian/` manually.
+  Always update the JSON spec and regenerate.
+
+---
+
 ## Repository layout (important folders)
 
 - `data/course-json/jp_course.json`  

@@ -1,0 +1,39 @@
+Skill:
+  Id: 526cd677-7174-4bee-ab4a-fd17f70d16a4
+  Name: Persone 1
+  Thumbnails:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+New words:
+- Word: ねこ
+  Translation: gatto
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+- Word: いぬ
+  Translation: cane
+  Images:
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+  - japanese-from-italian_cf1bb117d603
+Phrases:
+- Phrase: ねこ が います
+  Translation: C'è un gatto
+- Phrase: いぬ も います
+  Translation: C'è anche un cane
+Mini-dictionary:
+  Japanese:
+  - いぬ: cane
+  - います: esserci (animati) (forma cortese) (imasu)
+  - が: particella soggetto/focus (ga)
+  - ねこ: gatto
+  - も: particella 'anche' (mo)
+  Italian:
+  - C'è: C'è
+  - anche: anche
+  - c'è: c'è
+  - cane: cane
+  - gatto: gatto
+  - un: un
