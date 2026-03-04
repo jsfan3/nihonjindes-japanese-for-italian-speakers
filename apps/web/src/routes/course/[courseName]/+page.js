@@ -1,10 +1,10 @@
-import { page } from '$app/state';
+import { building } from '$app/environment';
 
-export async function load(page) {
+export async function load({ params, url }) {
 	const { get_course } = await import('../../../course-client');
-	const { courseName } = page.params;
-	const gistId = page.url.searchParams.get('gistId');
+	const { courseName } = params;
+	const gistId = building ? null : url.searchParams.get('gistId');
 	const course = await get_course({ courseName, gistId });
 
-	return { course };
+	return { course, gistId };
 }

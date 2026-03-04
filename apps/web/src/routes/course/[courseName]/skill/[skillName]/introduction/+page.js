@@ -1,14 +1,16 @@
+import { building } from '$app/environment';
 import { get_skill_introduction } from 'course-client';
 
-export async function load(page) {
-	const { courseName, skillName } = page.params;
+export async function load({ params, url }) {
+	const { courseName, skillName } = params;
 
-	const gistId = page.url.searchParams.get('gistId');
+	const gistId = building ? null : url.searchParams.get('gistId');
 	if (courseName === 'preview') {
-		const skillNameFromQuery = page.url.searchParams.get('skillName');
+		const skillNameFromQuery = building ? null : url.searchParams.get('skillName');
 
 		return {
 			loading: true,
+			gistId,
 			preview: {
 				type: skillName,
 				gistId,

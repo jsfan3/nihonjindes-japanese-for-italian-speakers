@@ -12,5 +12,6 @@ export const load: LayoutLoad = async () => {
 	await waitLocale();
 };
 
-export const ssr = false;
+export const prerender = false;
+export const ssr = true;
 

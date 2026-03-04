@@ -55,7 +55,7 @@
               "image": "data/course-img/こんにちは.png"
             },
             {
-              "ja": "おはよう ございます",
+              "ja": "おはよう　ございます",
               "it": "saluto di mattina",
               "image": "data/course-img/おはよう　ございます.png"
             },
@@ -68,11 +68,6 @@
               "ja": "さようなら",
               "it": "arrivederci",
               "image": "data/course-img/さようなら.png"
-            },
-            {
-              "ja": "ございます",
-              "it": "forma cortese",
-              "image": "data/course-img/ございます.png"
             }
           ]
         }

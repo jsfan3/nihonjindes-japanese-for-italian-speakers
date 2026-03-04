@@ -18,8 +18,9 @@
 		_Logout: () => void;
 	};
 	const _Logout = () => (window as unknown as WindowWithLogout)._Logout();
-	let gistId = page.url.searchParams.get('gistId');
-	const homepageLink = page.params?.courseName
+	let gistId: string | null = null;
+	$: gistId = (page.data as any)?.gistId ?? null;
+	$: homepageLink = page.params?.courseName
 		// if gistId is present, it will be added to the URL
 		? `/course/${page.params.courseName}${gistId ? `?gistId=${gistId}` : ''}`
 		: '/';

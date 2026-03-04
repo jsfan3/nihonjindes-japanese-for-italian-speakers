@@ -15,7 +15,7 @@
 	export let languageName = page.data.course.languageName;
 	export const repositoryURL = page.data.course.repositoryURL;
 	export let uiLanguage = 'es';
-	const gistId = page.url.searchParams.get('gistId');
+	const gistId = page.data.gistId;
 	locale.set(uiLanguage);
 </script>
 

@@ -1,0 +1,76 @@
+Skill:
+  Id: ca161265-cc68-47ad-8351-cb0eaa5f0c29
+  Name: Incontriamoci
+  Thumbnails:
+  - japanese-from-italian_4e8220278403
+  - japanese-from-italian_4b72e0e166c6
+  - japanese-from-italian_5b7a11a96077
+New words:
+- Word: さくら
+  Translation: fiori di ciliegio
+  Images:
+  - japanese-from-italian_4e8220278403
+  - japanese-from-italian_4e8220278403
+  - japanese-from-italian_4e8220278403
+- Word: ことば
+  Translation: parole
+  Images:
+  - japanese-from-italian_4b72e0e166c6
+  - japanese-from-italian_4b72e0e166c6
+  - japanese-from-italian_4b72e0e166c6
+- Word: あいさつ
+  Translation: saluti
+  Images:
+  - japanese-from-italian_5b7a11a96077
+  - japanese-from-italian_5b7a11a96077
+  - japanese-from-italian_5b7a11a96077
+- Word: こんにちは
+  Translation: saluto diurno
+  Images:
+  - japanese-from-italian_64a8e947d2e9
+  - japanese-from-italian_64a8e947d2e9
+  - japanese-from-italian_64a8e947d2e9
+- Word: こんばんは
+  Translation: saluto di sera
+  Images:
+  - japanese-from-italian_2ca6767cf5da
+  - japanese-from-italian_2ca6767cf5da
+  - japanese-from-italian_2ca6767cf5da
+- Word: さようなら
+  Translation: arrivederci
+  Images:
+  - japanese-from-italian_c3dab20458dc
+  - japanese-from-italian_c3dab20458dc
+  - japanese-from-italian_c3dab20458dc
+- Word: ございます
+  Translation: forma cortese
+  Images:
+  - japanese-from-italian_1afb165a8c0c
+  - japanese-from-italian_1afb165a8c0c
+  - japanese-from-italian_1afb165a8c0c
+Phrases:
+- Phrase: おはよう ございます
+  Translation: saluto di mattina
+Mini-dictionary:
+  Japanese:
+  - あいさつ: saluti
+  - おはよう: おはよう
+  - ことば: parole
+  - こんにちは: saluto diurno
+  - こんばんは: saluto di sera
+  - ございます: forma cortese
+  - さくら: fiori di ciliegio
+  - さようなら: arrivederci
+  Italian:
+  - arrivederci: arrivederci
+  - ciliegio: ciliegio
+  - cortese: cortese
+  - di: di
+  - diurno: diurno
+  - fiori: fiori
+  - forma: forma
+  - mattina: mattina
+  - parole: parole
+  - saluti: saluti
+  - saluto: saluto
+  - sera: sera

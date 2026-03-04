@@ -1,0 +1,331 @@
+{
+  "id": "4c42c64bb2d2",
+  "levels": 2,
+  "challenges": [
+    {
+      "type": "options",
+      "formInTargetLanguage": "おはよう ございます",
+      "meaningInSourceLanguage": "saluto di mattina",
+      "id": "9d082bfd981e",
+      "priority": 0,
+      "group": "b2c7464cfdbc"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": false,
+      "phrase": [
+        {
+          "word": "saluto",
+          "definition": "saluto"
+        },
+        {
+          "word": "di",
+          "definition": "di"
+        },
+        {
+          "word": "mattina",
+          "definition": "mattina"
+        }
+      ],
+      "chips": [
+        "おはよう",
+        "ございます"
+      ],
+      "solutions": [
+        [
+          "おはよう",
+          "ございます"
+        ]
+      ],
+      "formattedSolution": "おはよう ございます",
+      "id": "5845fc753f0d",
+      "priority": 2,
+      "group": "b2c7464cfdbc"
+    },
+    {
+      "type": "chips",
+      "translatesToSourceLanguage": true,
+      "phrase": [
+        {
+          "word": "おはよう",
+          "definition": "おはよう"
+        },
+        {
+          "word": "ございます",
+          "definition": "forma cortese"
+        }
+      ],
+      "chips": [
+        "saluto",
+        "di",
+        "mattina"
+      ],
+      "solutions": [
+        [
+          "saluto",
+          "di",
+          "mattina"
+        ]
+      ],
+      "formattedSolution": "saluto di mattina",
+      "id": "0579cdb4fd6b",
+      "priority": 2,
+      "group": "b2c7464cfdbc"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_4e8220278403.jpg",
+        "japanese-from-italian_4e8220278403.jpg",
+        "japanese-from-italian_4e8220278403.jpg"
+      ],
+      "formInTargetLanguage": "さくら",
+      "meaningInSourceLanguage": "fiori di ciliegio",
+      "id": "9e257bbb55a9",
+      "priority": 0,
+      "group": "cb94b89455c1"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_4e8220278403.jpg",
+        "japanese-from-italian_4e8220278403.jpg",
+        "japanese-from-italian_4e8220278403.jpg"
+      ],
+      "formInTargetLanguage": [
+        "さくら"
+      ],
+      "phrase": [
+        {
+          "word": "fiori",
+          "definition": "fiori"
+        },
+        {
+          "word": "di",
+          "definition": "di"
+        },
+        {
+          "word": "ciliegio",
+          "definition": "ciliegio"
+        }
+      ],
+      "id": "bea738f216e2",
+      "priority": 1,
+      "group": "cb94b89455c1"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_4b72e0e166c6.jpg",
+        "japanese-from-italian_4b72e0e166c6.jpg",
+        "japanese-from-italian_4b72e0e166c6.jpg"
+      ],
+      "formInTargetLanguage": "ことば",
+      "meaningInSourceLanguage": "parole",
+      "id": "e6760c5e98cd",
+      "priority": 0,
+      "group": "74d5d44dd677"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_4b72e0e166c6.jpg",
+        "japanese-from-italian_4b72e0e166c6.jpg",
+        "japanese-from-italian_4b72e0e166c6.jpg"
+      ],
+      "formInTargetLanguage": [
+        "ことば"
+      ],
+      "phrase": [
+        {
+          "word": "parole",
+          "definition": "parole\nことば"
+        }
+      ],
+      "id": "40baceaba5ab",
+      "priority": 1,
+      "group": "74d5d44dd677"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_5b7a11a96077.jpg",
+        "japanese-from-italian_5b7a11a96077.jpg",
+        "japanese-from-italian_5b7a11a96077.jpg"
+      ],
+      "formInTargetLanguage": "あいさつ",
+      "meaningInSourceLanguage": "saluti",
+      "id": "9a09f625a078",
+      "priority": 0,
+      "group": "5f1e9b26351e"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_5b7a11a96077.jpg",
+        "japanese-from-italian_5b7a11a96077.jpg",
+        "japanese-from-italian_5b7a11a96077.jpg"
+      ],
+      "formInTargetLanguage": [
+        "あいさつ"
+      ],
+      "phrase": [
+        {
+          "word": "saluti",
+          "definition": "saluti\nあいさつ"
+        }
+      ],
+      "id": "d5dd14194c36",
+      "priority": 1,
+      "group": "5f1e9b26351e"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_64a8e947d2e9.jpg",
+        "japanese-from-italian_64a8e947d2e9.jpg",
+        "japanese-from-italian_64a8e947d2e9.jpg"
+      ],
+      "formInTargetLanguage": "こんにちは",
+      "meaningInSourceLanguage": "saluto diurno",
+      "id": "fccca18741e2",
+      "priority": 0,
+      "group": "1e5989905bd2"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_64a8e947d2e9.jpg",
+        "japanese-from-italian_64a8e947d2e9.jpg",
+        "japanese-from-italian_64a8e947d2e9.jpg"
+      ],
+      "formInTargetLanguage": [
+        "こんにちは"
+      ],
+      "phrase": [
+        {
+          "word": "saluto",
+          "definition": "saluto"
+        },
+        {
+          "word": "diurno",
+          "definition": "diurno"
+        }
+      ],
+      "id": "765624f2e7bb",
+      "priority": 1,
+      "group": "1e5989905bd2"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_2ca6767cf5da.jpg",
+        "japanese-from-italian_2ca6767cf5da.jpg",
+        "japanese-from-italian_2ca6767cf5da.jpg"
+      ],
+      "formInTargetLanguage": "こんばんは",
+      "meaningInSourceLanguage": "saluto di sera",
+      "id": "4bf44a11ca9e",
+      "priority": 0,
+      "group": "623a8265b39f"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_2ca6767cf5da.jpg",
+        "japanese-from-italian_2ca6767cf5da.jpg",
+        "japanese-from-italian_2ca6767cf5da.jpg"
+      ],
+      "formInTargetLanguage": [
+        "こんばんは"
+      ],
+      "phrase": [
+        {
+          "word": "saluto",
+          "definition": "saluto"
+        },
+        {
+          "word": "di",
+          "definition": "di"
+        },
+        {
+          "word": "sera",
+          "definition": "sera"
+        }
+      ],
+      "id": "57c8a1f8f33a",
+      "priority": 1,
+      "group": "623a8265b39f"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_c3dab20458dc.jpg",
+        "japanese-from-italian_c3dab20458dc.jpg",
+        "japanese-from-italian_c3dab20458dc.jpg"
+      ],
+      "formInTargetLanguage": "さようなら",
+      "meaningInSourceLanguage": "arrivederci",
+      "id": "5e984d24363b",
+      "priority": 0,
+      "group": "8d2e1993d8e9"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_c3dab20458dc.jpg",
+        "japanese-from-italian_c3dab20458dc.jpg",
+        "japanese-from-italian_c3dab20458dc.jpg"
+      ],
+      "formInTargetLanguage": [
+        "さようなら"
+      ],
+      "phrase": [
+        {
+          "word": "arrivederci",
+          "definition": "arrivederci\nさようなら"
+        }
+      ],
+      "id": "05c7c7547158",
+      "priority": 1,
+      "group": "8d2e1993d8e9"
+    },
+    {
+      "type": "cards",
+      "pictures": [
+        "japanese-from-italian_1afb165a8c0c.jpg",
+        "japanese-from-italian_1afb165a8c0c.jpg",
+        "japanese-from-italian_1afb165a8c0c.jpg"
+      ],
+      "formInTargetLanguage": "ございます",
+      "meaningInSourceLanguage": "forma cortese",
+      "id": "aa79f91fcc52",
+      "priority": 0,
+      "group": "37216529ea07"
+    },
+    {
+      "type": "shortInput",
+      "pictures": [
+        "japanese-from-italian_1afb165a8c0c.jpg",
+        "japanese-from-italian_1afb165a8c0c.jpg",
+        "japanese-from-italian_1afb165a8c0c.jpg"
+      ],
+      "formInTargetLanguage": [
+        "ございます"
+      ],
+      "phrase": [
+        {
+          "word": "forma",
+          "definition": "forma"
+        },
+        {
+          "word": "cortese",
+          "definition": "cortese"
+        }
+      ],
+      "id": "51886a494fa1",
+      "priority": 1,
+      "group": "37216529ea07"
+    }
+  ]
+}
