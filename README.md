@@ -124,7 +124,7 @@ server {
   server_name example.com;
 
   root /var/www/nihonjindes;
-  index 200.html;
+  index index.html 200.html;
 
   location / {
     try_files $uri $uri/ /200.html;
@@ -151,7 +151,7 @@ server {
     AllowOverride None
 
     # Serve 200.html at /
-    DirectoryIndex 200.html
+    DirectoryIndex index.html 200.html
 
     # SPA fallback
     FallbackResource /200.html
