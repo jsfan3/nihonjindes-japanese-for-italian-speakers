@@ -56,6 +56,13 @@ python3 -m venv .venv
 npm -w @librelingo/web i -D @sveltejs/adapter-static
 ```
 
+4) Installation of the Japanese TTS used by `ll02_generate_course_from_json.py`
+- Info: `./setup-aivis-jp-tts.sh --help`
+- Setup: `./setup-aivis-jp-tts.sh --no-interactive --voice-uuid "59f96896-64d2-4378-830a-4d5feb3d81aa"`
+  (It needs to perform a very heavy download. If it times out, run it again)
+- Test 1: `aivis-jp-tts "こんにちは。テストです。" ~/Music/test1.mp3`
+- Test 2: `aivis-jp-tts --speed 1.0 "こんにちは。テストです。" ~/Music/test2.mp3`
+
 ---
 
 ## Pipeline overview

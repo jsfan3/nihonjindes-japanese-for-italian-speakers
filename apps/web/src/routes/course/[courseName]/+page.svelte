@@ -48,17 +48,23 @@
 	<Content>
 		<Columns>
 			<Column>
-				<strong>Nihonjindes</strong>
-				by <a href="https://www.informatica-libera.net/">Francesco Galgani</a> e basato su un 
-				<a href="https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers?tab=readme-ov-file">fork di LibreLingo</a>. Il contenuto del corso (testo + immagini) segue il mio percorso personale di studio, e lo sto preparando e aggiornando via via. E' in una fase preliminare di preparazione.
+				Mi chiamo <a href="https://www.informatica-libera.net/">Francesco Galgani</a>.
+                Sto realizzando <strong>Nihonjindes</strong>,
+				un raccolta di esercizi per lo studio della lingua giapponese, partendo da un 
+				<a href="https://github.com/jsfan3/nihonjindes-japanese-for-italian-speakers?tab=readme-ov-file">fork
+                personalizzato di LibreLingo Community</a>. I contenuti (testo, audio e immagini) seguono il mio percorso
+                studio, e li aggiorno via via. Se noti errori o imprecisioni, puoi <a href="https://www.informatica-libera.net/content/contacts">segnalarmeli</a>.
 			</Column>
 			<Column>
-				Il codice sorgente ha licenza
+				Il codice sorgente di FreeLingo ha licenza
 				<a href="https://opensource.org/licenses/AGPL-3.0">AGPL-3.0.</a><br />
-                I contenuti del corso hanno licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International</a>.
+                I contenuti del corso hanno licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                CC BY-SA 4.0 International</a>.
+                La voce giapponese è di
+                <a href="https://hub.aivis-project.com/aivm-models/59f96896-64d2-4378-830a-4d5feb3d81aa">Honoka</a>, con licenza <a href="https://github.com/Aivis-Project/ACML">ACML</a>. 
 			</Column>
             <Column>
-            Un ringraziamento particolare a <a href="https://www.nipponita.com/it/">Michela Viera (NipponITA)</a>.
+            Se stai cercando un insegnante di lingua giapponese, ti segnalo <a href="https://www.nipponita.com/it/">Michela Viera (NipponITA)</a>, che è ben organizzata e con un valido approccio pedagogico.
 			</Column>
 		</Columns>
 	</Content>
